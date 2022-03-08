@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  border: 2px solid white;
+  margin-top: 100px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.content {
+  width: 300px;
+  height: 500px;
+}
+
+.content img {
+  margin-bottom: 30px;
+}
+
+.content h1 {
+  margin-bottom: 25px;
+}
+
+.content p {
+  margin-bottom: 30px;
+}
+
+.content1 {
+  background-color: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+  padding: 40px;
+}
+
+.content1 button {
+  color: var(--bright-orange);
+}
+
+.content2 {
+  background-color: var(--dark-cyan);
+  padding: 40px;
+}
+
+.content2 button {
+  color: var(--dark-cyan);
+}
+
+.content3 {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+  padding: 40px;
+}
+
+.content3 button {
+  color: var(--very-dark-cyan);
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .content1 {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .content3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
